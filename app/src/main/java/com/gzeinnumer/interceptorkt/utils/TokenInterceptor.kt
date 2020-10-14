@@ -13,6 +13,7 @@ class TokenInterceptor {
                 .addInterceptor(interceptor)
                 .addInterceptor { chain ->
                     val request = chain.request().newBuilder()
+                        .addHeader("Accept", "application/json")
                         .addHeader("Authorization", "Bearer Token")
                         .build()
                     chain.proceed(request)
