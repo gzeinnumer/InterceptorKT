@@ -9,7 +9,7 @@ Please Enable [Retrofit](https://square.github.io/retrofit/) on your project, fo
     implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
 ```
 
-- Make Class TokenInterceptor
+- Make Class `TokenInterceptor`
 ```kotlin
 class TokenInterceptor {
     val client: OkHttpClient
@@ -33,7 +33,7 @@ class TokenInterceptor {
 }
 ```
 
-- Add configuration to RetrofitServer
+- Add configuration to RetroServer
 ```kotlin
 object RetroServer {
     private const val base_url = "http://192.168.0.121/retrofit/"
