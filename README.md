@@ -53,3 +53,9 @@ object RetroServer {
 interface ApiService {
 }
 ```
+
+---
+
+```
+Copyright 2020 M. Fadli Zein
+```
