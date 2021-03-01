@@ -28,6 +28,8 @@ class TokenInterceptor {
                 .readTimeout(90, TimeUnit.SECONDS)
                 .writeTimeout(90, TimeUnit.SECONDS)
                 .connectTimeout(90, TimeUnit.SECONDS)
+                .retryOnConnectionFailure(false)
+                .cache(null)
                 .build()
         }
 }
